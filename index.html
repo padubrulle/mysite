@@ -3,27 +3,120 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./script/main.js" type="module" defer></script>
     <title>Document</title>
 </head>
 <body>
-    <nav>
+    <nav id="navbar">
         <ul>
-            <li><a href="#">Accueil</a></li>
-            <li><a href="#">Qui suis-je</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="#home">Accueil</a></li>
+            <li><a href="#about">Qui suis-je</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
         </ul>
     </nav>
 
+    <div>
+        <label for="theme">Theme</label>
+        <select name="theme" id="theme">
+            <option value="light">light</option>
+            <option value="dark">dark</option>
+            <option value="retrowave">retrowave</option>
+        </select>
+    </div>
+
+    <div>
+        <label for="languages">Languages</label>
+        <ul name="languages">
+            <li><a>Français</a></li>
+            <li><a>Anglais</a></li>
+        </ul>
+    <div>
+
+    </div>
+
     <main>
         <section id="home">
+            <h1>Pierre-Alain Dubrulle</h1>
+            <h2>Développeur Fullstack</h2>
+            <p>Développeur Fullstack en début de carrière, doté de bases solides en technologies back-end, et désireux de contribuer à des projets innovants. Passionné par le clean code, j'aime optimiser l'écriture et l'architecture entre lisibilité et performance.</p>
+            <img src="https://via.placeholder.com/200x200" alt="Photo">
+            <a href="/data/cv.txt" download="cv" id="dl_cv">Télécharger mon CV</a>
         </section>
         <section id="about">
+            <h2>Qui suis-je</h2>
+            <ul>
+                <li>
+                    <div class="about_card">
+                        <h3>Le pro</h3>
+                        <p>Description du pro</p>
+                        <ul>
+                            <h4>Compétences</h4>
+                            <li>Compétence 1</li>
+                            <li>Compétence 2</li>
+                            <li>Compétence 3</li>
+                        </ul>
+                    </div>
+                </li>
+                <li>
+                    <div class="about_card">
+                        <h3>Le perso</h3>
+                        <p>Description du perso</p>
+                    </div>
+                </li>
+            </ul>
         </section>
         <section id="portfolio">
+            <h2>Portfolio</h2>
+            <ul>
+                <li>
+                    <div class="project_card">
+                        <h3>Projet 1</h3>
+                        <p>Description du projet 1</p>
+                        <a href="#">Voir le projet</a>
+                        <div>
+                            <ul>
+                                <h4>Technos</h4>
+                                <li>Techno 1</li>
+                                <li>Techno 2</li>
+                                <li>Techno 3</li>
+                            </ul>
+                        </div>
+                        <img src="https://via.placeholder.com/200x200" alt="Image du projet 1">
+                    </div>
+                </li>
+                <li><div class="project_card"><div class="project_card">
+                    <h3>Projet 2</h3>
+                    <p>Description du projet 2</p>
+                    <a href="#">Voir le projet</a>
+                    <div>
+                        <ul>
+                            <h4>Technos</h4>
+                            <li>Techno 1</li>
+                            <li>Techno 2</li>
+                            <li>Techno 3</li>
+                        </ul>
+                    </div>
+                    <img src="https://via.placeholder.com/200x200" alt="Image du projet 2">
+                </div></div></li>
+                <li><div class="project_card"></div></li>
+            </ul>
         </section>
-        <section id="Contact">
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Vous pouvez me contacter via mon adresse mail <a href="mailto:pierrealain.dubrulle@gmail.com">pierrealain.dubrulle@gmail.com</a> ou utiliser le formulaire ci-dessous ou à l'adresse suivante : </p>
+            <form>
+                <label for="name">Nom</label>
+                <input type="text" id="name" name="name">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email">
+                <label for="message">Message</label>
+                <textarea id="message" name="message"></textarea>
+                <button type="submit">Envoyer</button>
+            </form>
         </section>
+        <a href="#navbar">Retour en haut</a>
     </main>
 </body>
 </html>
