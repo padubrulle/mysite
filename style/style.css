@@ -1,3 +1,6 @@
+body{
+    position: relative;
+}
 .light{
     background-color: white;
     color: black;
@@ -9,6 +12,52 @@
 }
 
 .retrowave{
-    background-image: linear-gradient(indigo, magenta, red, orange, yellow);
+    background-image: url("./img/outrun.jpg");
+    background-size: 100%;
+    background-attachment: fixed;
     color: white;
+}
+
+.home_container{
+    position: relative;
+    overflow: hidden;
+    width: 60%;
+    margin:auto;
+    box-shadow: 8px 5px 5px whitesmoke, -8px -8px 8px blue;
+}
+
+.home_container h1{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+
+.home_container h2{
+    width: 50%;
+    margin: auto;
+    padding-top: 1%;
+    text-align: center;
+}
+
+.home_container img{
+    border-radius: 50%;
+    height: auto;
+    position: absolute;
+    top:-40%;
+    left: -10%;
+}
+
+.home_container p{
+    border: solid 1px red;
+    margin-left: 20%;
+}
+
+.home_container a{
+    border: solid 1px red;
+    position:absolute;
+
+}
+
+section{
+    display: block;
 }
