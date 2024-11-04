@@ -52,7 +52,6 @@ export async function findExperiencesById (id) {
 
 /**
  * @param {number} id 
- * @returns {string}
  */
 export async function deleteExperience (id) {
     const experiences = await findExperiences()
@@ -66,6 +65,12 @@ export async function deleteExperience (id) {
 
 }
 
+/**
+ * Check if experience exists
+ * @param {Experience[]} exp
+ * @param {number} id 
+ * @returns {boolean}
+ */
 async function expExists(exp, id){
     const expIndex = await exp.findIndex((exp) => { return exp.id == id } )
     if(expIndex === -1){
