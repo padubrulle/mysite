@@ -9,12 +9,10 @@
 </head>
 <body class="dark">
     <nav id="navbar">
-        <ul>
-            <li><a href="#home">Accueil</a></li>
-            <li><a href="#about">Qui suis-je</a></li>
-            <li><a href="#portfolio">Portfolio</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+        <a href="#home">Accueil</a>
+        <a href="#about">Qui suis-je</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact</a>
     </nav>
 
     <div>
@@ -39,12 +37,17 @@
     <main>
         <section id="home">
             <div class="home_container">
-                <h1>Pierre-Alain Dubrulle</h1>
-                <h2>Développeur Fullstack</h2>
-                <p>Développeur Fullstack en début de carrière, doté de bases solides en technologies back-end, et désireux de contribuer à des projets innovants. Passionné par le clean code, j'aime optimiser l'écriture et l'architecture entre lisibilité et performance.</p>
                 <img src="https://via.placeholder.com/200x200" alt="Photo">
-                <a href="mailto:pierrealain.dubrulle@gmail.com">Contactez-moi</a>
-                <a href="/data/cv.txt" download="cv" id="dl_cv">Télécharger mon CV</a>
+                <!-- <div class="profile_image"></div> -->
+                <div>
+                    <h1>Pierre-Alain Dubrulle</h1>
+                    <h2>Développeur Fullstack</h2>
+                    <p>Développeur Fullstack en début de carrière, doté de bases solides en technologies back-end, et désireux de contribuer à des projets innovants. Passionné par le clean code, j'aime optimiser l'écriture et l'architecture entre lisibilité et performance.</p>
+                    <div class="home_links">
+                        <a href="mailto:pierrealain.dubrulle@gmail.com">Contactez-moi</a>
+                        <a href="/data/cv.txt" download="cv" id="dl_cv">Télécharger mon CV</a>   
+                    </div>
+                </div>
             </div>
         </section>
         <section id="about">
@@ -75,7 +78,7 @@
             <ul>
                 <li>
                     <div class="project_card">
-                        <h3>Projet 1</h3>
+                        <h1>Projet 1</h1>
                         <p>Description du projet 1</p>
                         <a href="#">Voir le projet</a>
                         <div>
@@ -89,8 +92,8 @@
                         <img src="https://via.placeholder.com/200x200" alt="Image du projet 1">
                     </div>
                 </li>
-                <li><div class="project_card"><div class="project_card">
-                    <h3>Projet 2</h3>
+                <li><div class="project_card">
+                    <h1>Projet 2</h1>
                     <p>Description du projet 2</p>
                     <a href="#">Voir le projet</a>
                     <div>
