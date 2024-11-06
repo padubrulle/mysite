@@ -77,3 +77,22 @@ section{
     display: block;
 }
 
+.project_card{
+    position: relative;
+    align-items: center;
+    border: green 1px solid;
+    height: auto;
+    width: auto;
+}
+
+.project_card h1{
+    margin: auto;
+    text-align: center;
+    
+}
+
+.project_card p{
+    font-size: 36px;
+    margin: auto;
+    text-align: center;
+}
