@@ -1,5 +1,6 @@
 body{
     position: relative;
+    box-sizing: border-box;
 }
 .light{
     background-color: white;
@@ -77,22 +78,51 @@ section{
     display: block;
 }
 
-.project_card{
+.project-card h1{
+    margin: auto;
+    text-align: center;
+}
+
+.project-card{
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    border-radius: 5px;
+    width: 500px;
+    height: 300px;
+    margin: 2px 0px;
     position: relative;
-    align-items: center;
-    border: green 1px solid;
-    height: auto;
-    width: auto;
+    overflow: hidden;
 }
 
-.project_card h1{
+.project-container {
+    display: flex;
+    height: 100%;
+    width: 80vw;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
     margin: auto;
-    text-align: center;
-    
 }
 
-.project_card p{
-    font-size: 36px;
-    margin: auto;
-    text-align: center;
+.project-card:nth-of-type(2n+0){
+    background-color: hotpink;
+}
+
+.project-card:nth-of-type(2n+1){
+    background-color: blueviolet;
+}
+
+.project-card img{
+    position: absolute;
+    top: -10%;
+}
+
+.project-card:nth-of-type(2n+1) img{
+    right: -6%;
+    border-radius: 0% 0% 0% 60%;
+}
+
+.project-card:nth-of-type(2n+0) img{
+    left: -6%;
+    border-radius: 0% 0% 60% 0%;
 }
