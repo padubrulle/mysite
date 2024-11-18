@@ -1,15 +1,18 @@
 # mysite
 
-Pour lancer le projet :
+To use this project:
 
-Prérequis : 
+Prerequisite : 
 NodeJS
 
-Cloner le repo sur la machine :
+Clone the repo on your computer (beware, maybe there are some malicious code ';...;')
 git clone https://github.com/padubrulle/mysite.git
 
-Ouvrir le projet et exécuter la commande suivante pour installer les dépendances du projet: 
+Open the project and execute following command to install project dependancies:
 npm install
 
-Pour lancer le projet, il ne reste plus qu'à lancer :
+To launch the project, execute:
 npm run dev
+
+To launch tests, execute:
+npm test ./tests/experciences_tests.js
